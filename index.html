@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>| Lista de Tarefas Oliverzyn</title>
+</head>
+<body onload="recuperaItens()">
+    <main>
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <div>
+                <input type="text" placeholder="Adicionar Tarefa" class="tarefa" id="tarefa" autofocus maxlength="70">
+                <button class="add" onclick="add()"><i class="fas fa-plus-square"></i></button>
+            </div>
+        </header>
+        <section id="lista">
+            <div id="item-container">
+
+            </div>
+        </section>
+        <footer>
+            <button class="save" onclick="save()">Salvar</button>
+            <button class="delete" onclick="deletar()">Limpar</button>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
